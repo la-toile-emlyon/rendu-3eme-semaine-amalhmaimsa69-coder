@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    border: 0;
+    padding: 0%;
+}
+nav{
+    background-color: white;
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-lien{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.lien-nav a{
+    display: flex;
+    flex-direction: row;
+    
+}
+:root{
+    --primary:#551144;
+    --secondary:#FEE2E2;
+    --text:#3E0831;
+}
+#hero{
+    background-image: url(../assets/architecte-interieur/projets/appartement-haussmannien.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    filter: brightness(0.5);
+}
+.logosectionhero{
+    padding: 4px;
+    height: 72px;
+    width: 80px;
+    margin-left: 4px;
+}
+section{
+    padding: 80px 24px;
+}
+.container{
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
