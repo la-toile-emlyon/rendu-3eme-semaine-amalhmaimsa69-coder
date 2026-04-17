@@ -2,19 +2,54 @@
     margin: 0%;
     border: 0;
     padding: 0%;
+    font-family: "Luxurious Roman", serif;
 }
+
+
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+
 :root{
     --primary:#551144;
     --secondary:#FEE2E2;
     --text:#3E0831;
 }
+
+
 nav{
     background-color: white;
     gap: 20px;
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
+
+
+h1{
+    font-size: 69px;
+    display: flex;
+    justify-content: center;
+}
+
+
+h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    color: var(--text);
+}
+
+
+p,a,ul{
+    font-size: 18px;
+}
+
+
 .logo-lien{
     display: flex;
     flex-direction: row;
@@ -22,11 +57,8 @@ nav{
     justify-content: space-between;
     padding-right: 30px;
 }
-.lien-nav a{
-    display: flex;
-    flex-direction: row;
-    
-}
+
+
 #hero{
     background-image: linear-gradient(#00000071, #00000071), url(assets/architecte-interieur/projets/appartement-haussmannien.jpg);
     background-size: cover;
@@ -35,18 +67,23 @@ nav{
     width: auto;
     height: 90vh;
     color: white;
-    /* filter: brightness(0.5); */
     display: flex;
 }
+
+
 .logosectionhero{
     padding: 4px;
     height: 72px;
     width: 80px;
     margin-left: 4px;
 }
+
+
 section{
     padding: 80px 24px;
 }
+
+
 .container{
     margin: auto;
     width: 1080px;
@@ -54,8 +91,240 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 35px;
 }
+
+
 .page2{
-    background-color: #FEE2E2;
-    color: #3E0831;
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+
+.button1{
+    background-color: var(--secondary);
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+
+.flexRow1{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.button2{
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+
+.button3{
+    color: var(--primary);
+    background-color: var(--secondary);
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+
+.image2{
+    height: 300px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+
+li{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+
+.card{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    padding: 15px;
+    
+}
+
+
+.article{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.button4{
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 7px 15px;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+
+.contentcolumn{
+    gap: 30px;
+}
+
+
+h3{
+    padding: 10px 0px;
+}
+
+
+
+.button5{
+    display: flex;
+    justify-content: end;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+.appartement1 h3{
+    padding-bottom: 30px;
+}
+
+
+.image3{
+    height: 200px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+
+.flexRow2{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.appartement1{
+    width: 550px;
+}
+
+
+.page4{
+    background-color: var(--primary);
+    color: white;
+}
+
+
+.article1{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    padding: 25px;
+    background: var(--secondary);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+
+.appartement2{
+    width: 550px;
+}
+
+
+.article2{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    padding: 25px;
+    background: var(--secondary);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    width: 450px;
+}
+
+
+.avis{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+.divAvis1{
+    display: flex;
+    gap: 30px;
+}
+
+
+.flexRow2{
+    display: flex;
+    gap: 15px;
+}
+
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#ancre2{
+    color: var(--text);
+}
+
+
+.titre{
+    color: white;
+}
+
+
+.page6{
+    background-color: #1a0514;
+    color: var(--secondary);
+}
+
+
+.icon{
+    height: 35px;
+    width: 40px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+
+.titrefooter{
+    color: var(--secondary);
+    display: flex;
+    justify-content: left;
+}
+
+
+.footer{
+    display: flex;
+}
+
+
+.footer1{
+    margin-left: 60px;
+}
+
+
+.form{
+    margin-left: 250px;
 }

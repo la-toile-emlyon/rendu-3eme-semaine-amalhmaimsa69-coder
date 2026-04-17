@@ -6,55 +6,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
 
 <body>
     <header>
         <div class="logo-lien">
-            <img src="assets/architecte-interieur/logo.png" alt="" class="logosectionhero">
+            <img class="logosectionhero" src="assets/architecte-interieur/logo.png" alt="">
             <nav class="lien-nav">
-                <a href="">Lien1</a>
-                <a href="">Lien2</a>
-                <a href="">Lien3</a>
-                <button><a href=""></a></button>
+                <a href="#ancre1">À propos de nous</a>
+                <a href="#ancre2">Nos prestations</a>
+                <a href="#ancre3">Nos réalisations</a>
+                <a class="button1" href="#ancre4">Contact</a>
             </nav>
         </div>
-        
+
 
         <section id="hero">
             <div class="container">
                 <h1>Clémence Rivière Studio</h1>
                 <p>Révéler le potentiel de chaque espace</p>
-                <a class="button" href="">Prendre rendez-vous</a>
-                <!-- <div class="flexRow">
-                    <a class="button" href="">Découvrir</a>
-                    <a class="button" href="">Découvrir</a>
-                </div> -->
+                <div class="flexRow1">
+                    <a class="button2" href="">Prendre rendez-vous</a>
+                    <a class="button3" href="">Découvrir</a>
+                </div>
             </div>
         </section>
 
     </header>
     <main>
-        <section class="page2">
+        <section class="page2" id="ancre1">
             <div class="container">
                 <h2>Une approche centrée sur vos besoins et votre bien-être</h2>
                 <p>Une approche sur-mesure, pensée pour créer des espaces à la fois esthétiques et fonctionnels.</p>
-                <div class="flexRow">
-                    <img src="" alt="">
-                    <div class="contentColum">
+                <div class="flexRow1">
+                    <img class="image2" src="assets/architecte-interieur/illustration-plan.jpg" alt="">
+                    <div class="contentColumn">
                         <ul>
                             <li>Une approche humaine et créative, centrée sur vos usages et vos envies</li>
                             <li>Des matériaux durables et des fournisseurs locaux privilégiés</li>
                             <li>Une expertise esthétique alliée à une rigueur technique</li>
                             <li>Un accompagnement complet, du croquis à la réception du chantier</li>
                         </ul>
-                        <a class="button" href="">Découvrir mon approche</a>
+                        <a class="button4" href="">Découvrir mon approche</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="ancre2">
+            <h2>Nos prestations</h2>
+            <div class="article">
+                <article class="card">
+                    <img src="assets/architecte-interieur/clay-elliot.jpg" alt="">
+                    <h3>Rénovation d'appartements</h3>
+                    <p>Repenser la circulation, les volumes et la lumière pour créer des intérieurs élégants,
+                        fonctionnels
+                        et chaleureux.</p>
+                    <a class="button5" href="button5">En savoir plus</a>
+                </article>
+                <article class="card">
+                    <img src="assets/architecte-interieur/illustration-plan.jpg" alt="">
+                    <h3>Aménagement sur mesure</h3>
+                    <p>Conception de mobilier intégré et d'espaces adaptés à vos besoins : bibliothèques, rangements,
+                        cuisines, bureaux...</p>
+                    <a class="button5" href="button5">En savoir plus</a>
+                </article>
+                <article class="card">
+                    <img src="assets/architecte-interieur/spacejoy.jpg" alt="">
+                    <h3>Décoration intérieure</h3>
+                    <p>Sélection de matériaux, textures et couleurs pour harmoniser votre intérieur et lui donner une
+                        identité unique.</p>
+                    <a class="button5" href="button5">En savoir plus</a>
+                </article>
+            </div>
+        </section>
 
+        <section class="page4" id="ancre3">
+            <div class="container">
+                <h2 class="titre">Nos réalisations</h2>
+                <article class="article1">
+                    <img class="image3" src="assets/architecte-interieur/projets/appartement-haussmannien.jpg" alt="">
+                    <div class="appartement1">
+                        <h3>
+                            Appartement Haussmannien – Lyon 6e
+                        </h3>
+                        <p>
+                            Rénovation complète d’un appartement de 120 m² : ouverture des espaces, mise en valeur
+                            des moulures et création d’une cuisine contemporaine contrastée.
+                        </p>
+                    </div>
+                </article>
+                <article class="article1">
+                    <div class="appartement2">
+                        <h3>
+                            Maison contemporaine – Annecy
+                        </h3>
+                        <p>
+                            Aménagement intérieur complet : création d’un grand espace de vie traversant, matériaux
+                            naturels et mobilier sur mesure en bois clair.
+                        </p>
+                    </div>
+                    <img class="image3" src="assets/architecte-interieur/projets/maison-contemporaine.jpg" alt="">
+                </article>
+                <article class="article1">
+                    <img class="image3" src="assets/architecte-interieur/projets/studio-etudiant.jpg" alt="">
+                    <div class="appartement1">
+                        <h3>
+                            Studio étudiant – Villeurbanne
+                        </h3>
+                        <p>
+                            Optimisation d’un petit espace de 25 m² avec mobilier modulable et ambiance minimaliste
+                            chaleureuse.
+                        </p>
+                    </div>
+                </article>
+                <article class="article1">
+                    <div class="appartement2">
+                        <h3>
+                            Boutique artisanale – Croix-Rousse
+                        </h3>
+                        <p>
+                            Transformation d’un ancien atelier en boutique lumineuse : jeu de textures entre béton ciré,
+                            bois brut et verrières d’atelier.
+                        </p>
+                    </div>
+                    <img class="image3" src="assets/architecte-interieur/projets/devanture-boutique.jpg" alt="">
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Avis clients</h2>
+                <div class="container">
+                    <div class="divAvis1">
+                        <article class="article2">
+                            <p>Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût. Le résultat
+                                est à la fois pratique et sublime.</p>
+                            <div class="flexRow2">
+                                <img class="avis" src="assets/architecte-interieur/mathilde.jpg" alt="">
+                                <div class="flexColumn">
+                                    <p><strong>Mathilde</strong></p>
+                                    <p>Rénovation d'appartement</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article2">
+                            <p>Un vrai sens du détail et une belle écoute de nos besoins. Les meubles sur mesure sont
+                                parfaits et l’espace respire.</p>
+                            <div class="flexRow2">
+                                <img class="avis" src="assets/architecte-interieur/olivier.jpg" alt="">
+                                <div class="flexColumn">
+                                    <p><strong>Olivier</strong></p>
+                                    <p>Aménagement de bureau</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="divAvis2">
+                        <article class="article2">
+                            <p>J’adore la nouvelle ambiance de mon salon : couleurs apaisantes, lumière retravaillée, et
+                                des matières nobles. Je recommande à 100 %.</p>
+                            <div class="flexRow2">
+                                <img class="avis" src="assets/architecte-interieur/sonia.jpg" alt="">
+                                <div class="flexColumn">
+                                    <p><strong>Sonia</strong></p>
+                                    <p>Décoration intérieure</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page6" id="ancre4">
+            <div class="footer">
+            <div class="footer1">
+            <h2 class="titrefooter">Prêts à travailler ensemble ?</h2>
+            <p>Une idée, un projet, une envie de collaboration ?</p>
+            <p>Contactez-nous, nous serons ravis d'en discuter et de voir <br> comment avancer ensemble.</p>
+            <p>Laisser votre contact téléphonique et je vous rapellerai.</p>
+            <a href="https://discord.com/"><img class="icon" src="assets/architecte-interieur/discord.png" alt=""></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dfr_FR"><img class="icon" src="assets/architecte-interieur/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/?hl=fr"><img class="icon" src="assets/architecte-interieur/instagram.png" alt=""></a>
+            <a href="https://x.com/?lang=fr"><img class="icon"src="assets/architecte-interieur/x.png" alt=""></a>
+            </div>
+            <div class="form">
+            <form action=""></form>
+            <input type="Nom">
+            <form action=""></form>
+            <input type="Téléphone" name="" id="">
+            <form action=""></form>
+            <input type="Email" name="" id="">
+            <form action=""></form>
+            <input type="Message">
+            </div>
+            </div>
+        </section>
     </main>
 </body>
 
