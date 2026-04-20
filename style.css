@@ -1,64 +1,6 @@
-*{
-    margin: 0%;
-    border: 0;
-    padding: 0%;
-    font-family: "Luxurious Roman", serif;
-}
-
-
-a{
-    text-decoration: none;
-    color: var(--text);
-}
-
-
-:root{
-    --primary:#551144;
-    --secondary:#FEE2E2;
-    --text:#3E0831;
-}
-
-
-nav{
-    background-color: white;
-    gap: 20px;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-
-h1{
-    font-size: 69px;
-    display: flex;
-    justify-content: center;
-}
-
-
-h2{
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-    color: var(--text);
-}
-
-
-p,a,ul{
-    font-size: 18px;
-}
-
-
-.logo-lien{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 30px;
-}
-
-
+/* Correction : Range ton CSS dans l'ordre d'apparition de tes classes dans le html.
+Mets aussi des commentaires pour séparer les parties. Exemple : 
+/* hero section [fermer le commentaire ici] 
 #hero{
     background-image: linear-gradient(#00000071, #00000071), url(assets/architecte-interieur/projets/appartement-haussmannien.jpg);
     background-size: cover;
@@ -76,6 +18,95 @@ p,a,ul{
     height: 72px;
     width: 80px;
     margin-left: 4px;
+} 
+*/
+
+*{
+    margin: 0%;
+    border: 0;
+    padding: 0%;
+    font-family: "Luxurious Roman", serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* Correction : ça on le met tout en haut juste après * */
+:root{
+    --primary:#551144;
+    --secondary:#FEE2E2;
+    --text:#3E0831;
+}
+
+/* Correction : pourquoi ajouter un background-color alors que le header est déjà blanc ?
+Pourquoi un list-style. nav c'est une liste ? Ca fait quoi si tu l'enlèves ? */
+nav{
+    background-color: white;
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Correction : Pourquoi il y a un display flex sur ton h1 ? 
+Essaye d'ouvrir l'inspecteur et décoche la propriété display. 
+Ca change qqch ? Si ça change rien, enlève.*/
+h1{
+    font-size: 69px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Correction : Enlève les propriétés inutiles. */
+h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    color: var(--text);
+}
+
+
+p,a,ul{
+    font-size: 18px;
+}
+
+/* Correction : pourquoi tu mets un padding que à droite ?
+Alors que tu ajoutes une marge et un padding autour de ton logo qui sont à gauche.
+On préférera mettre padding: 4px; ici et un margin-right sur la nav de 26px. */
+.logo-lien{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+/* Correction : y'a combien d'élément HTML dans ta section avec l'id "hero" ?
+Le display:flex permet de dire aux enfants de se ranger. Comment tu ranges un groupe de 1 ? */
+#hero{
+    background-image: linear-gradient(#00000071, #00000071), url(assets/architecte-interieur/projets/appartement-haussmannien.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 90vh;
+    color: white;
+    display: flex;
+}
+
+/* Correction : on appelera plus cette classe logo-section-hero. */
+/* Correction : pour que l'image soit pas écrasée, tu peux utiliser object-position et object-fit. 
+Je te laisse chercher leur utilisation. */
+.logosectionhero{
+    padding: 4px;
+    height: 72px;
+    width: 80px;
+    margin-left: 4px;
 }
 
 
@@ -83,7 +114,10 @@ section{
     padding: 80px 24px;
 }
 
-
+/* Correction : Je te conseille de faire deux classes. 
+Une classe container qui contient margin:auto; width:1080px;
+Et une autre "flex-column-center" qui contient le reste. 
+Pour appliquer ces classes, on écrira <div class="container flex-column-center"> avec simplement un espace entre les deux classes. */
 .container{
     margin: auto;
     width: 1080px;
@@ -100,14 +134,17 @@ section{
     color: var(--text);
 }
 
-
+/* Correction : tu pourrais appeler cette classe "cta-secondaire" par exemple */
 .button1{
     background-color: var(--secondary);
     padding: 7px 15px;
     border-radius: 5px;
 }
 
-
+/* Correction : fais deux classes : 
+- une "flex-row" qui contient display:flex et flex-direction:row et le gap:20px
+- une "text-promise" qui contient le padding-top
+Pour les appliquer dans le html tu écris : <div class="flex-row text-promise"> avec un espace entre les deux classes. */
 .flexRow1{
     padding-top: 15px;
     display: flex;
@@ -123,7 +160,7 @@ section{
     border-radius: 5px;
 }
 
-
+/* Correction : C'est le même que "cta-secondaire" pourquoi tu réutilises pas la même classe de style ? */
 .button3{
     color: var(--primary);
     background-color: var(--secondary);
@@ -131,20 +168,27 @@ section{
     border-radius: 5px;
 }
 
-
+/* Correction : Pareil, attention à ne pas étirer les images.
+Utilise object-fit et/ou object-position. */
 .image2{
     height: 300px;
     width: 500px;
     border-radius: 15px;
 }
 
-
+/* Correction : pourquoi display flex ? li a combien d'enfants ?
+Si c'est pour enlever les puces, regarde la propriété text-decoration. */
 li{
     display: flex;
     flex-direction: column;
     padding: 6px;
 }
 
+
+.article{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .card{
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.432);
@@ -157,13 +201,7 @@ li{
     
 }
 
-
-.article{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
+/* Correction : C'est pas le même style que le "cta-principal" ? */
 .button4{
     color: var(--secondary);
     background-color: var(--primary);
@@ -205,7 +243,8 @@ h3{
     border-radius: 15px;
 }
 
-
+/* Correction : le contenu exacte de cette classe est déjà dans une autre classe. 
+Pourquoi tu recrées une classe qui fait exactement la même chose ? */
 .flexRow2{
     padding-top: 15px;
     display: flex;

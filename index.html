@@ -13,11 +13,16 @@
 <body>
     <header>
         <div class="logo-lien">
+            <!--Correction : rempli l'attribut alt parce que ça permet d'afficher un texte si l'image ne s'affiche pas.
+            Ca permet aussi d'être plus accessible et inclusif pour les malvoyants. -->
             <img class="logosectionhero" src="assets/architecte-interieur/logo.png" alt="">
             <nav class="lien-nav">
+                <!--Correction : Donne un nom qui a un sens à ton ancre : "promess-section" par exemple-->
                 <a href="#ancre1">À propos de nous</a>
                 <a href="#ancre2">Nos prestations</a>
                 <a href="#ancre3">Nos réalisations</a>
+                <!--Correction : Donne un nom qui a un sens à ton style de bouton : "bouton-secondaire" ou "cta-secondaire".
+                Le nom de ta classe doit explicité ce qu'elle contient. -->
                 <a class="button1" href="#ancre4">Contact</a>
             </nav>
         </div>
@@ -27,6 +32,8 @@
             <div class="container">
                 <h1>Clémence Rivière Studio</h1>
                 <p>Révéler le potentiel de chaque espace</p>
+                <!--Correction : en css et html les classes sont plus écrites "flex-row" que "flexRow"
+                Ensuite pour un 1 alors que si elle s'appelle "flex-row", cette classe ne doit que mettre la boite en flex et en ligne.-->
                 <div class="flexRow1">
                     <a class="button2" href="">Prendre rendez-vous</a>
                     <a class="button3" href="">Découvrir</a>
@@ -41,7 +48,9 @@
                 <h2>Une approche centrée sur vos besoins et votre bien-être</h2>
                 <p>Une approche sur-mesure, pensée pour créer des espaces à la fois esthétiques et fonctionnels.</p>
                 <div class="flexRow1">
+                    <!--Correction : Je le note pas partout mais rempli les alt et met des noms de classes qui décrivent ce que fait la classe.-->
                     <img class="image2" src="assets/architecte-interieur/illustration-plan.jpg" alt="">
+                    <!--Correction : on ecrira plus "content-column"-->
                     <div class="contentColumn">
                         <ul>
                             <li>Une approche humaine et créative, centrée sur vos usages et vos envies</li>
@@ -57,10 +66,12 @@
 
         <section id="ancre2">
             <h2>Nos prestations</h2>
+            <!-- Correction : par convention on écrira plus articles avec un s pour la classe comme la div en contient plusieurs -->
             <div class="article">
                 <article class="card">
                     <img src="assets/architecte-interieur/clay-elliot.jpg" alt="">
                     <h3>Rénovation d'appartements</h3>
+                    <!-- Correction : pourquoi tu as mis un retour à la ligne après fonctionnels ? -->
                     <p>Repenser la circulation, les volumes et la lumière pour créer des intérieurs élégants,
                         fonctionnels
                         et chaleureux.</p>
@@ -138,16 +149,24 @@
         </section>
 
         <section>
+            <!-- Correction : pourquoi il y a une div en plus ici ? -->
             <div>
+                <!-- Correction : met le titre dans la div container. Le titre aussi ne doit pas dépasser trop sur le bord. -->
                 <h2>Avis clients</h2>
                 <div class="container">
                     <div class="divAvis1">
                         <article class="article2">
                             <p>Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût. Le résultat
                                 est à la fois pratique et sublime.</p>
+                            <!-- Correction : pourquoi tu fais une classe flexRow2 qui fait exactement la même chose que flexRow1 ?
+                            Tu peux juste réutiliser flexRow1 -->
                             <div class="flexRow2">
                                 <img class="avis" src="assets/architecte-interieur/mathilde.jpg" alt="">
                                 <div class="flexColumn">
+                                    <!-- Correction : pourquoi tu mets Mathilde entre balise "strong" ? 
+                                    La balise strong a un sens particulier et permet d'insister en terme de référencement sur un mot.
+                                    Le mot Mathilde n'est pas un mot-clé important pour référencer notre site.
+                                    On utilisera des propriétés CSS si c'est juste pour le style. -->
                                     <p><strong>Mathilde</strong></p>
                                     <p>Rénovation d'appartement</p>
                                 </div>
@@ -182,6 +201,7 @@
             </div>
         </section>
 
+        <!-- Correction : refaire l'indentation proprement -->
         <section class="page6" id="ancre4">
             <div class="footer">
             <div class="footer1">
@@ -194,6 +214,19 @@
             <a href="https://www.instagram.com/?hl=fr"><img class="icon" src="assets/architecte-interieur/instagram.png" alt=""></a>
             <a href="https://x.com/?lang=fr"><img class="icon"src="assets/architecte-interieur/x.png" alt=""></a>
             </div>
+            <!-- Correction : Pour le form, il faut autant de balise form qu'il y a de formulaire. 
+            Tous les input et label doivent être contenu entre la balise ouvrante form et fermante form. 
+            On écrira donc : 
+            <form> 
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Full Name" required />
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Votre email" required />
+            </form> 
+
+            Pour les autres type, tout est sur MDN et regarde ce que fait l'attribut placeholder.
+            -->
             <div class="form">
             <form action=""></form>
             <input type="Nom">
